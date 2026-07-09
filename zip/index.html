@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList DApp</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "ethers": "https://esm.sh/ethers@6.11.1"
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.__QUICK_DAPP_CONFIG__ = window.__QUICK_DAPP_CONFIG__ || {};
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
+              sans: ['"Inter"', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              paper: '#f7f5f0',
+              ink: '#1a1a1a',
+              accent: '#e85d04',
+              done: '#2d6a4f',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+      <meta name="base:app_id" content="tes6" />
+  </head>
+  <body class="bg-paper text-ink min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
